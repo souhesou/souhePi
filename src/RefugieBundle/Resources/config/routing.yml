@@ -1,3 +1,6 @@
 ajout_Refugie:
     path:     /ajout
     defaults: { _controller: RefugieBundle:Refugie:ajout }
+affiche_Refugie:
+    path:     /affiche
+    defaults: { _controller: RefugieBundle:Refugie:affiche}

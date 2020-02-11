@@ -1,0 +1,23 @@
+{% extends 'base_front.html.twig' %}
+{% block container %}
+<table class="table">
+    <thead>
+    <tr>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Age</th>
+        <th>Origine</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for refug in refugie %}
+    <tr>
+        <td>{{ refug.nom }}</td>
+        <td>{{ refug.prenom }}</td>
+        <td>{{ refug.age }}</td>
+        <td>{{ refug.origine }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
